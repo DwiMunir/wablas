@@ -170,12 +170,71 @@
 
 <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
-    <div class="card bg-white">
-        <div class="card-body">
-            <div class="card-title">
-                <p>hahah</p>
+    <div class="modal-content">
+      <div class="modal-header bg-primary">
+        <h5 class="modal-title text-white">Add new number</h5>
+        <button class="close text-white" type="button" data-dismiss="modal" aria-label="Close"><span class="font-weight-light" aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <form action="">
+        <div class="form-group">
+            <label for="number">How many number?</label>
+            <select class="form-control" id="number">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5 (Discont ~ 24%)</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10 (Discont ~ 37%)</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15 (Discont ~ 50%)</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">Subscription Period</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+                <option>1 Month (30 days) - Rp197.000 ($17)</option>
+                <option>3 Month - Rp591.000 ($51)</option>
+                <option>6 Month - Rp1.182.000 ($102)</option>
+                <option class="text-danger">1 year - Rp1.197.000 ($170) (2 month free)</option>
+            </select>
+        </div>
+        </form>
+        <div class="row border-bottom mt-5">
+            <div class="col-lg-6">
+                <h6 class="fs-0 font-weight-normal">Subtotal</h6>
+                <h6 class="fs-0 font-weight-normal">Unix code</h6>
+            </div>
+            <div class="col-lg-6 text-right">
+                <h6 class="fs-0 font-weight-normal">Rp197.000</h6>
+                <h6 class="fs-0 font-weight-normal">Rp.26</h6>
             </div>
         </div>
+        <div class="row mt-2 mb-8">
+            <div class="col-lg-6">
+                <h6 class="fs-0 font-weight-bold">Total</h6>
+            </div>
+            <div class="col-lg-6 text-right">
+                <h6 class="fs-0 font-weight-bold">Rp197.026</h6>
+            </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary btn-sm rounded-pill" type="button" data-dismiss="modal">Cancel</button>
+        <button class="btn btn-primary btn-sm rounded-pill" type="button">Add</button>
+      </div>
     </div>
   </div>
 </div>
