@@ -1,0 +1,19 @@
+input[type="search"]{
+    width: 20%;
+}
+#data-icon{
+    font-size: 1.5vw;
+}
+.svg-inline--fa.fa-w-14{
+    width: .74rem;
+}
+.en-sh{
+    font-size: .8rem;
+}
+.pagination .page-link{
+    padding: .5rem auto;
+    line-height: .8;
+}
+.table tbody tr td a{
+    color: blue;
+}
