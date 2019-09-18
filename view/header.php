@@ -74,7 +74,7 @@
                 <ul class="nav collapse" id="pages" data-parent="#navbarVerticalCollapse">
                   <li class="nav-item"><a class="nav-link" href="pages/activity.html">Send Message</a>
                   </li>
-                  <li class="nav-item"><a class="nav-link" href="pages/activity.html">Schedule</a>
+                  <li class="nav-item"><a class="nav-link" href="../pages/schedule.php">Schedule</a>
                   </li>
                   <li class="nav-item"><a class="nav-link" href="pages/activity.html">Reminder</a>
                   </li>
