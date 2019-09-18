@@ -50,7 +50,7 @@
           </a>
           <div class="collapse navbar-collapse" id="navbarVerticalCollapse">
             <ul class="navbar-nav flex-column">
-              <li class="nav-item"><a class="nav-link" href="/washiap/pages/index.html" aria-controls="home">
+              <li class="nav-item"><a class="nav-link" href="/wablas/index.php" aria-controls="home">
                   <div class="d-flex align-items-center"><span class="nav-link-icon"><span class="fas fa-mobile-alt"></span></span><span>Device</span>
                   </div>
                 </a>
@@ -71,7 +71,7 @@
                   </div>
                 </a>
                 <ul class="nav collapse" id="pages" data-parent="#navbarVerticalCollapse">
-                  <li class="nav-item"><a class="nav-link" href="pages/activity.html">Send Message</a>
+                  <li class="nav-item"><a class="nav-link" href="/wablas/pages/activity.php">Send Message</a>
                   </li>
                   <li class="nav-item"><a class="nav-link" href="pages/schedule.php">Schedule</a>
                   </li>

@@ -29,6 +29,7 @@
     <!-- ===============================================-->
     <!--    Stylesheets-->
     <!-- ===============================================-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700%7cPoppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="../assets/css/theme.css" rel="stylesheet">
     <link href="../assets/lib/datatables-bs4/dataTables.bootstrap4.min.css" rel="stylesheet">
@@ -38,7 +39,6 @@
 
 
   <body>
-
     <!-- ===============================================-->
     <!--    Main Content-->
     <!-- ===============================================-->
@@ -51,7 +51,7 @@
           </a>
           <div class="collapse navbar-collapse" id="navbarVerticalCollapse">
             <ul class="navbar-nav flex-column">
-              <li class="nav-item"><a class="nav-link" href="/washiap/pages/index.html" aria-controls="home">
+              <li class="nav-item"><a class="nav-link" href="/wablas/" aria-controls="home">
                   <div class="d-flex align-items-center"><span class="nav-link-icon"><span class="fas fa-mobile-alt"></span></span><span>Device</span>
                   </div>
                 </a>
@@ -72,9 +72,9 @@
                   </div>
                 </a>
                 <ul class="nav collapse" id="pages" data-parent="#navbarVerticalCollapse">
-                  <li class="nav-item"><a class="nav-link" href="pages/activity.html">Send Message</a>
+                  <li class="nav-item"><a class="nav-link" href="/wablas/pages/activity.php">Send Message</a>
                   </li>
-                  <li class="nav-item"><a class="nav-link" href="../pages/schedule.php">Schedule</a>
+                  <li class="nav-item"><a class="nav-link" href="/wablas/pages/schedule.php">Schedule</a>
                   </li>
                   <li class="nav-item"><a class="nav-link" href="pages/activity.html">Reminder</a>
                   </li>
@@ -82,7 +82,7 @@
                   </li>
                 </ul>
               </li>
-              <li class="nav-item"><a class="nav-link" href="pages/billing.php" >
+              <li class="nav-item"><a class="nav-link" href="/wablas/pages/billing.php" >
                   <div class="d-flex align-items-center"><span class="nav-link-icon"><span class="fas fa-credit-card"></span></span><span>Billing</span>
                   </div>
                 </a>
