@@ -41,7 +41,7 @@ tr th{
                                 <td>6285642184</td>
                                 <td>Hooree ! Orderan ysf di psikologimarketing.com dengan Order Id #4141 telah selesai, Selamat atas investasi leher ke atasnya, semoga bertambah ilmunya, meningkat derajatnya, aamiin 😍 Silahkan cek email atau langsung login ke member.psikologimarketing.com di pojok kanan atas. Jangan lupa juga ysf telah *otomatis menjadi affiliate*, silahkan ambil link affiliate di member.psikologimarketing.com/affiliate Jika ada pertanyaan jangan sungkan langsung hubungi dengan klik wa.me/6285974568372 Terima kasih 🎊🎉</td>
                                 <td>
-                                    <a href="" class="btn btn-danger btn-sm fs--1 text-white">rejected</a>
+                                    <a href="" class="btn btn-danger btn-sm fs--1 text-white">not registered</a>
                                 </td>
                                 <td>text</td>
                                 <td>
@@ -55,7 +55,7 @@ tr th{
                                 <td>6285642184</td>
                                 <td>Hooree ! Orderan ysf di psikologimarketing.com dengan Order Id #4141 telah selesai, Selamat atas investasi leher ke atasnya, semoga bertambah ilmunya, meningkat derajatnya, aamiin 😍 Silahkan cek email atau langsung login ke member.psikologimarketing.com di pojok kanan atas. Jangan lupa juga ysf telah *otomatis menjadi affiliate*, silahkan ambil link affiliate di member.psikologimarketing.com/affiliate Jika ada pertanyaan jangan sungkan langsung hubungi dengan klik wa.me/6285974568372 Terima kasih 🎊🎉</td>
                                 <td>
-                                    <a href="" class="btn btn-danger btn-sm fs--1 text-white">rejected</a>
+                                    <a href="" class="btn btn-danger btn-sm fs--1 text-white">not registered</a>
                                 </td>
                                 <td>text</td>
                                 <td>
