@@ -1,20 +1,29 @@
 <?php
     require_once "../view/header.php";
 ?>
-
+<style>
+tr th{
+    white-space:nowrap;
+}
+    @media only screen and (max-width:760px){
+        .table th, .table td{
+            white-space:nowrap;
+        }   
+    }
+</style>
     <div class="col-lg-12 col-12">
         <div class="card bg-white rounded-0">
             <div class="card-body">
                 <div class="card-title">Invoice List</div>
-                <div id="datatables_filter" class="dataTables_filter mt-2 d-flex justify-content-end">
+                <div id="datatables_filter" class="dataTables_filter mt-2 d-flex justify-content-lg-end justify-content-sm-start">
                     <label class="float-left d-flex justify-content-end pt-2 pr-2">Search:</label>
-                    <input type="search" class="form-control input-sm" placeholder="" aria-controls="datatables">
+                    <input type="search" class="form-control input-lg vw-lg-25" placeholder="" style="max-width:40%; width:40%;">
                     <div class="btn-group btn-group-sm" role="group" >
                         <button type="button" class="btn btn-light fs-0 font-weight-light" id="btn-search">search</button>
                         <button type="button" class="btn btn-light fs-0 font-weight-light" id="btn-search">reset</button>
                     </div>
                 </div>
-                <div class="table-responsive mt-3">
+                <div class="table-responsive mt-3 ">
                     <table class="table table-sm display responsive no-wrap mb-0 fs--1 w-100">
                         <thead>
                             <tr class="table-info">
@@ -25,7 +34,7 @@
                                 <th scope="col">Device</th>
                                 <th scope="col">Total</th>
                                 <th scope="col">Status</th>
-                                <th scope="col 	d-sm-none d-md-block">Action</th>
+                                <th scope="col" >Action</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -37,9 +46,9 @@
                                 <td>-</td>
                                 <td>69.089</td>
                                 <td>pending</td>
-                                <td class="text-center">
-                                <a href="" id="data-icon" class="mr-2 text-primary" data-toggle="modal" data-target="#modelId" data-placement="bottom" title="overview"><img src="../assets/img/preview.png" alt=""></i></i></a>
-                                <a href="" id="data-icon"  class=" text-primary" data-toggle="tooltip" data-placement="bottom" title="download PDF"><img src="../assets/img/pdf.png" fill alt=""></a>
+                                <td class="text-center ">
+                                    <a href="" id="data-icon" class="mr-2 text-primary" data-toggle="modal" data-target="#modelId" data-placement="bottom" title="overview"><img src="../assets/img/preview.png" alt=""></i></i></a>
+                                    <a href="" id="data-icon"  class=" text-primary" data-toggle="tooltip" data-placement="bottom" title="download PDF"><img src="../assets/img/pdf.png" fill alt=""></a>
                                 </td>
                             </tr>
                             <tr>
@@ -50,7 +59,7 @@
                                 <td>RZ8B</td>
                                 <td>375.809</td>
                                 <td>cancel</td>
-                                <td class="text-center 	d-sm-none d-md-block">
+                                <td class="text-center ">
                                     <a href="" id="data-icon" class="mr-2 text-primary" data-toggle="modal" data-target="#modelId" data-placement="bottom" title="overview"><img src="../assets/img/preview.png" alt=""></a>
                                     <a href="" id="data-icon"  class=" text-primary" data-toggle="tooltip" data-placement="bottom" title="download PDF"><img src="../assets/img/pdf.png" fill alt=""></a>
                                 </td>
@@ -87,9 +96,13 @@
     <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
         <div class="modal-dialog px-5 min-vw-100" id="content-modal" role="document">
             <div class="modal-content">
+                <div class="modal-header bg-info text-white h5 text-uppercase">
+                    <span>Billing Information</span>
+                </div>
                 <div class="modal-body">
-                    <div class="row">
-                        <div class="col-lg-7 col-12 float-left">
+                    
+                    <div class="row px-1">
+                        <div class="col-lg-7 col-12 my-3 border-sm-bottom border-lg-0 float-left">
                             <p class="text-uppercase h5 font-weight-light mb-3">PT. TIGA MANUNGGAL TEKNOLOGI INDONESIA</p>
                             <p class="text-capitalize h6">Bank Transfer :</p>
                             <p class="text-uppercase h6 font-weight-light"><span class="mr-1">bank :</span> bri</p>
@@ -97,14 +110,14 @@
                             <p class="text-uppercase h6 font-weight-light"><span class="float-left mr-1">a/n :</span> Ahsan muhammad</p>
                             <p class="text-capitalize font-italic h6 font-weight-lighter"> *) Indonesia Only</p>
                         </div>
-                        <div class="col-lg-5 col-12 float-sm-left float-right text-right">
+                        <div class="col-lg-5 col-12 float-sm-left float-right text-lg-right">
                             <p class="h6 mb-3">order # INV19001056</p>
                             <p class="text-uppercase h5 font-weight-light mb-3">Febrian</p>
                             <p class="text-capitalize h6">adress :</p>
                             <p class="text-capitalize h6 font-weight-light">Tambak, Banyumas, Jawa Tengah</p>
                             <p class="text-capitalize h6">Order date :</p>
                             <p class="text-capitalize h6 font-weight-light">14 sep 2019</p>
-                            <div class="status mt-3">
+                            <div class="status mt-3 fs--1">
                                 <span class="h5 text-capitalize font-weight-normal">status :</span>
                                 <p class="float-right ml-3 h5 text-uppercase fs-1">pending</p>
                             </div>
@@ -115,7 +128,7 @@
                                     <h5 class="card-title font-weight-light mb-4">Order Summary</h5>
                                     <table class="table table-sm display responsive no-wrap mb-0 fs--1 w-100">
                                         <thead>
-                                            <tr class="h5 text-capitalize">
+                                            <tr class="h5 text-capitalize fs-lg-0 fs--1">
                                                 <th>package name</th>
                                                 <th>period</th>
                                                 <th>quantity</th>
@@ -124,7 +137,7 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr class="fs-0">
+                                            <tr class="fs-lg-0 fs--1">
                                                 <td scope="row">Quota 1</td>
                                                 <td>monthly</td>
                                                 <td>1</td>
@@ -134,19 +147,19 @@
                                         </tbody>
                                     </table>
                                     <div class="row">
-                                        <div class="col-lg-12 text-right mt-4">
+                                        <div class="col-lg-12 text-right mt-4 ">
                                             <table class="float-right">
                                                 <tr>
-                                                    <td class="py-2 h5">subtotal</td>
-                                                    <td class="py-2 pl-5 fs-1">69.099</td>
+                                                    <td class="py-2 h5 fs--1 fs-lg-0">subtotal</td>
+                                                    <td class="py-2 pl-5 fs--1 fs-lg-0">69.099</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="py-2 h5">unix code</td>
-                                                    <td class="py-2 pl-5 fs-1">Rp.99</td>
+                                                    <td class="py-2 h5 fs--1 fs-lg-0">unix code</td>
+                                                    <td class="py-2 pl-5 fs--1 fs-lg-0">Rp.99</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="py-2 h5 font-wieght-normal">total transfer</td>
-                                                    <td class="py-2 pl-5 fs-1 text-danger">Rp.69.099</td>
+                                                    <td class="py-2 h5 font-wieght-normal fs--1 fs-lg-0">total transfer</td>
+                                                    <td class="py-2 pl-5 fs--1 fs-lg-0 text-danger">Rp.69.099</td>
                                                 </tr>
                                             </table>
                                         </div>

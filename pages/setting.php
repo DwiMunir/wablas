@@ -1,45 +1,48 @@
-<!DOCTYPE html>
+<?php
+  require_once "../view/header.php";
+?>
+<!-- <!DOCTYPE html>
 <html lang="en-US" dir="ltr">
 
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 
 
     <!-- ===============================================-->
     <!--    Document Title-->
     <!-- ===============================================-->
-    <title>Washiapp</title>
+    <!-- <title>Washiapp</title> -->
 
 
     <!-- ===============================================-->
     <!--    Favicons-->
     <!-- ===============================================-->
-    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicons/apple-touch-icon.png">
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicons/favicon-16x16.png">
     <link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicons/favicon.ico">
     <link rel="manifest" href="../assets/img/favicons/manifest.json">
     <meta name="msapplication-TileImage" content="../assets/img/favicons/mstile-150x150.png">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#ffffff"> -->
 
 
     <!-- ===============================================-->
     <!--    Stylesheets-->
     <!-- ===============================================-->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700%7cPoppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="../assets/css/theme.css" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700%7cPoppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="../assets/css/theme.css" rel="stylesheet"> -->
 
-  </head>
+  <!-- </head>
 
 
-  <body>
+  <body> -->
 
     <!-- ===============================================-->
     <!--    Main Content-->
     <!-- ===============================================-->
-    <main class="main" id="top">
+    <!-- <main class="main" id="top">
       <div class="container">
         <nav class="navbar navbar-vertical navbar-expand-xl navbar-light navbar-glass"><a class="navbar-brand text-left" href="index.html">
             <div class="d-flex align-items-center py-3"><img class="mr-2" src="../assets/img/washiapp-blue.png" alt="" width="200" style="-webkit-filter: drop-shadow(5px 5px 5px #222222);
@@ -99,8 +102,8 @@
             </ul>
 
           </div>
-        </nav>
-        <div class="content">
+        </nav> -->
+        <!-- <div class="content">
           <nav class="navbar navbar-light navbar-glass fs--1 font-weight-semi-bold row navbar-top sticky-kit navbar-expand">
             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarVerticalCollapse" aria-controls="navbarVerticalCollapse" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><a class="navbar-brand text-left ml-3" href="../index.html">
               <div class="d-flex align-items-center"><img class="mr-2" src="../assets/img/illustrations/falcon.png" alt="" width="40" /><span class="text-sans-serif">falcon</span>
@@ -118,7 +121,7 @@
                 
               </ul>
             </div>
-          </nav>
+          </nav> -->
           <div class="card mb-3">
             <div class="bg-holder d-none d-lg-block bg-card" style="background-image:url(../assets/img/illustrations/corner-4.png);">
             </div>
@@ -222,7 +225,7 @@
               </div>
             </div>
           </div> 
-          <footer>
+          <!-- <footer>
             <div class="row no-gutters justify-content-between fs--1 mt-4 mb-3">
               <div class="col-12 col-sm-auto text-center">
                 <p class="mb-0 text-600">Thank you for creating with Falcon <span class="d-none d-sm-inline-block">| </span><br class="d-sm-none" /> 2019 &copy; <a href="https://themewagon.com">Themewagon</a></p>
@@ -235,7 +238,7 @@
         </div>
       </div>
     </main>
-    <!-- ===============================================-->
+    <-- ===============================================-->
     <!--    End of Main Content-->
     <!-- ===============================================-->
 
@@ -244,7 +247,7 @@
 
     <!-- ===============================================-->
     <!--    JavaScripts-->
-    <!-- ===============================================-->
+    <!-- ===============================================
     <script src="../assets/js/jquery.min.js"></script>
     <script src="../assets/js/popper.min.js"></script>
     <script src="../assets/js/bootstrap.js"></script>
@@ -256,4 +259,7 @@
 
   </body>
 
-</html>
+</html> -->
+<?php
+  require_once "../view/footer.php";
+?>

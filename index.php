@@ -119,7 +119,7 @@
                             <div class="dropdown-menu dropdown-menu-right border py-0" aria-labelledby="dropdown1">
                                 <div class="bg-white py-2">
                                     <a class="dropdown-item" href="#!"><span class="fas fa-lock"></span> Lock Private Message</a>
-                                    <a class="dropdown-item" href="pages/setting.html"><span class="fas fa-cog"></span> Setting</a>
+                                    <a class="dropdown-item" href="pages/setting.php"><span class="fas fa-cog"></span> Setting</a>
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="#!"><span class="fas fa-shopping-cart"></span> Extend</a>
                                 </div>

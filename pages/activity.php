@@ -16,18 +16,20 @@
                 <div class="scroll-content">
                     <div class="col-lg-12 border-bottom py-3">
                         <div class="row">
-                            <div class="col-lg-1">
+                            <div class="col-lg-1 col-2">
                                 <span class="fs-8"><i class="fas fa-user-alt    "></i></span>
                             </div>
-                            <div class="col-lg-11 py-2">
+                            <div class="col-lg-11 col-10 py-2">
                                 <div class="col-lg-12">
                                     <div class="row">
-                                        <div class="col-lg-6 fs--1 font-weight-bold">
-                                            <span>Device ID : <span>RZ8B</span> | </span>
-                                            <span>Name : <span>Febrian</span></span>
-                                        </div>
-                                        <div class="col-lg-6 text-right fs--1 text-600">
+                                        <div class="col-lg-12 ">
+                                            <div class="text-left fs--1 font-weight-bold">
+                                                <span>Device ID : <span>RZ8B</span> | </span>
+                                                <span>Name : <span>Febrian</span></span>
+                                            </div>
+                                            <div class="text-left text-weight-light fs--2">
                                             <span>15 August 2019 - 11:03:00</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -56,18 +58,20 @@
                     </div>
                     <div class="col-lg-12 border-bottom py-3">
                         <div class="row">
-                            <div class="col-lg-1">
+                            <div class="col-lg-1 col-2">
                                 <span class="fs-8"><i class="fas fa-user-alt    "></i></span>
                             </div>
-                            <div class="col-lg-11 py-2">
+                            <div class="col-lg-11 col-10 py-2">
                                 <div class="col-lg-12">
                                     <div class="row">
-                                        <div class="col-lg-6 fs--1 font-weight-bold">
-                                            <span>Device ID : <span>RZ8B</span> | </span>
-                                            <span>Name : <span>Febrian</span></span>
-                                        </div>
-                                        <div class="col-lg-6 text-right fs--1 text-600">
+                                        <div class="col-lg-12 ">
+                                            <div class="text-left fs--1 font-weight-bold">
+                                                <span>Device ID : <span>RZ8B</span> | </span>
+                                                <span>Name : <span>Febrian</span></span>
+                                            </div>
+                                            <div class="text-left text-weight-light fs--2">
                                             <span>15 August 2019 - 11:03:00</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -96,18 +100,20 @@
                     </div>
                     <div class="col-lg-12 border-bottom py-3">
                         <div class="row">
-                            <div class="col-lg-1">
+                            <div class="col-lg-1 col-2">
                                 <span class="fs-8"><i class="fas fa-user-alt    "></i></span>
                             </div>
-                            <div class="col-lg-11 py-2">
+                            <div class="col-lg-11 col-10 py-2">
                                 <div class="col-lg-12">
                                     <div class="row">
-                                        <div class="col-lg-6 fs--1 font-weight-bold">
-                                            <span>Device ID : <span>RZ8B</span> | </span>
-                                            <span>Name : <span>Febrian</span></span>
-                                        </div>
-                                        <div class="col-lg-6 text-right fs--1 text-600">
+                                        <div class="col-lg-12 ">
+                                            <div class="text-left fs--1 font-weight-bold">
+                                                <span>Device ID : <span>RZ8B</span> | </span>
+                                                <span>Name : <span>Febrian</span></span>
+                                            </div>
+                                            <div class="text-left text-weight-light fs--2">
                                             <span>15 August 2019 - 11:03:00</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -136,18 +142,20 @@
                     </div>
                     <div class="col-lg-12 border-bottom py-3">
                         <div class="row">
-                            <div class="col-lg-1">
+                            <div class="col-lg-1 col-2">
                                 <span class="fs-8"><i class="fas fa-user-alt    "></i></span>
                             </div>
-                            <div class="col-lg-11 py-2">
+                            <div class="col-lg-11 col-10 py-2">
                                 <div class="col-lg-12">
                                     <div class="row">
-                                        <div class="col-lg-6 fs--1 font-weight-bold">
-                                            <span>Device ID : <span>RZ8B</span> | </span>
-                                            <span>Name : <span>Febrian</span></span>
-                                        </div>
-                                        <div class="col-lg-6 text-right fs--1 text-600">
+                                        <div class="col-lg-12 ">
+                                            <div class="text-left fs--1 font-weight-bold">
+                                                <span>Device ID : <span>RZ8B</span> | </span>
+                                                <span>Name : <span>Febrian</span></span>
+                                            </div>
+                                            <div class="text-left text-weight-light fs--2">
                                             <span>15 August 2019 - 11:03:00</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -174,10 +182,7 @@
                             </div>
                         </div>
                     </div>
-                </div>  
-                <div class="scrollbar-track scrollbar-track-y">
-                    <div class="scrollbar-thumb scrollbar-thumb-y" ></div>
-                </div>             
+                </div>            
             </div>
         </div>
         <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
@@ -193,7 +198,7 @@
                         </div>
                         <form action="" class="my-4">
                             <div class="form-group">
-                                <label for="exampleFormControlSelect1">Select Project</label>
+                                <label for="exampleFormControlSelect1">Select Device</label>
                                 <select class="form-control text-600 fs--1" id="exampleFormControlSelect1">
                                     <option>WOOWA</option>
                                 </select>
@@ -216,7 +221,6 @@
             </div>
         </div>
     </div>
-    <!-- Modal -->
     
 
 

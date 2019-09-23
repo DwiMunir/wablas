@@ -60,9 +60,9 @@
                   </div>
                 </a>
                 <ul class="nav collapse" id="email" data-parent="#navbarVerticalCollapse">
-                  <li class="nav-item"><a class="nav-link" href="email/inbox.html">Message Status</a>
+                  <li class="nav-item"><a class="nav-link" href="/wablas/pages/status.php">Message Status</a>
                   </li>
-                  <li class="nav-item"><a class="nav-link" href="email/email-detail.html">Log</a>
+                  <li class="nav-item"><a class="nav-link" href="/wablas/pages/log.php">Log</a>
                   </li>
                 </ul>
               </li>
@@ -77,7 +77,7 @@
                   </li>
                   <li class="nav-item"><a class="nav-link" href="pages/activity.html">Reminder</a>
                   </li>
-                  <li class="nav-item"><a class="nav-link" href="pages/activity.html">SMS</a>
+                  <li class="nav-item"><a class="nav-link" href="/wablas/pages/sms.php">SMS</a>
                   </li>
                 </ul>
               </li>
@@ -86,7 +86,7 @@
                   </div>
                 </a>
               </li>
-              <li class="nav-item"><a class="nav-link" href="chat.html">
+              <li class="nav-item"><a class="nav-link" href="/wablas/pages/account.php">
                   <div class="d-flex align-items-center"><span class="nav-link-icon"><span class="fas fa-user"></span></span><span>Account</span>
                   </div>
                 </a></li>
