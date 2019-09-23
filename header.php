@@ -16,12 +16,30 @@
     <!-- ===============================================-->
     <!--    Favicons-->
     <!-- ===============================================-->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/Icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/Icon.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/Icon.png">
-    <link rel="shortcut icon" type="image/x-icon" sizes="32x32" href="assets/img/Icon.png">
-    <link rel="manifest" sizes="32x32" href="assets/img/Icon.png">
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="assets/icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icon.png">
+    <link rel="shortcut icon" type="image/x-icon" sizes="32x32" href="assets/icon.png">
+    <link rel="manifest" sizes="32x32" href="assets/icon.png">
     <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff"> -->
+
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/icons/icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/icons/icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/icons/icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/icons/icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/icons/icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/icons/icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/icons/icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/icons/icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icons/icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/img/icons/icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/icons/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/icons/icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/icons/icon/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/icons/icon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/img/icons/icon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
 
@@ -42,7 +60,7 @@
     <!--    Main Content-->
     <!-- ===============================================-->
     <main class="main" id="top">
-      <div class="container">
+      <div class="container-fluid">
         <nav class="navbar navbar-vertical navbar-expand-xl navbar-light navbar-glass"><a class="navbar-brand text-left" href="/wablas">
             <div class="d-flex align-items-center py-3"><img class="mr-2" src="assets/img/washiapp-blue.png" alt="" width="200" style="-webkit-filter: drop-shadow(5px 5px 5px #222222);
     filter: drop-shadow(3px 3px 2px #222222);" />
@@ -50,7 +68,7 @@
           </a>
           <div class="collapse navbar-collapse" id="navbarVerticalCollapse">
             <ul class="navbar-nav flex-column">
-              <li class="nav-item"><a class="nav-link" href="/wablas/index.php" aria-controls="home">
+              <li class="nav-item active"><a class="nav-link" href="/wablas/index.php" aria-controls="home">
                   <div class="d-flex align-items-center"><span class="nav-link-icon"><span class="fas fa-mobile-alt"></span></span><span>Device</span>
                   </div>
                 </a>
