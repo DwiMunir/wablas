@@ -10,7 +10,7 @@
     <!-- ===============================================-->
     <!--    Document Title-->
     <!-- ===============================================-->
-    <title>Washiapp</title>
+    <title>Washiapp | Setting</title>
 
 
     <!-- ===============================================-->
@@ -34,16 +34,7 @@
     <link href="../assets/css/theme.css" rel="stylesheet">
     <link href="../assets/lib/datatables-bs4/dataTables.bootstrap4.min.css" rel="stylesheet">
     <link href="../assets/lib/datatables.net-responsive-bs4/responsive.bootstrap4.css" rel="stylesheet">
-    <style>
-    tr th{
-        white-space:nowrap;
-    }
-    @media only screen and (max-width:760px){
-        .table th, .table td{
-            white-space:nowrap;
-        }   
-    }
-</style>
+
   </head>
 
 
@@ -69,10 +60,10 @@
                   <div class="d-flex align-items-center"><span class="nav-link-icon"><span class="fas fa-clipboard-list"></span></span><span>History</span><span class="badge badge-pill ml-2 badge-soft-success"></span>
                   </div>
                 </a>
-                <ul class="nav collapse show" id="email" data-parent="#navbarVerticalCollapse">
-                  <li class="nav-item active"><a class="nav-link" href="/wablas/pages/status.php">Message Status</a>
+                <ul class="nav collapse" id="email" data-parent="#navbarVerticalCollapse">
+                  <li class="nav-item"><a class="nav-link" href="/wablas/pages/status.html">Message Status</a>
                   </li>
-                  <li class="nav-item"><a class="nav-link" href="/wablas/pages/log.php">Log</a>
+                  <li class="nav-item"><a class="nav-link" href="/wablas/pages/log.html">Log</a>
                   </li>
                 </ul>
               </li>
@@ -80,23 +71,23 @@
                   <div class="d-flex align-items-center"><span class="nav-link-icon"><span class="fas fa-handshake"></span></span><span>Services</span>
                   </div>
                 </a>
-                <ul class="nav collapse" id="pages" data-parent="#navbarVerticalCollapse">
-                  <li class="nav-item"><a class="nav-link" href="/wablas/pages/activity.php">Send Message</a>
+                <ul class="nav collapse show" id="pages" data-parent="#navbarVerticalCollapse">
+                  <li class="nav-item"><a class="nav-link" href="/wablas/pages/activity.html">Send Message</a>
                   </li>
-                  <li class="nav-item"><a class="nav-link" href="/wablas/pages/schedule.php">Schedule</a>
+                  <li class="nav-item active"><a class="nav-link" href="/wablas/pages/schedule.html">Schedule</a>
                   </li>
                   <li class="nav-item"><a class="nav-link" href="pages/activity.html">Reminder</a>
                   </li>
-                  <li class="nav-item"><a class="nav-link" href="/wablas/pages/sms.php">SMS</a>
+                  <li class="nav-item"><a class="nav-link" href="/wablas/pages/sms.html">SMS</a>
                   </li>
                 </ul>
               </li>
-              <li class="nav-item"><a class="nav-link" href="/wablas/pages/billing.php" >
+              <li class="nav-item"><a class="nav-link" href="/wablas/pages/billing.html" >
                   <div class="d-flex align-items-center"><span class="nav-link-icon"><span class="fas fa-credit-card"></span></span><span>Billing</span>
                   </div>
                 </a>
               </li>
-              <li class="nav-item"><a class="nav-link" href="/wablas/pages/account.php">
+              <li class="nav-item"><a class="nav-link" href="/wablas/pages/account.html">
                   <div class="d-flex align-items-center"><span class="nav-link-icon"><span class="fas fa-user"></span></span><span>Account</span>
                   </div>
                 </a></li>
@@ -131,65 +122,91 @@
               </ul>
             </div>
           </nav>
+
+    <div class="container my-4">
+        <h3 class="font-weight-normal">Schedule</h3>
+    </div>
+    <div class="container">
         <div class="row">
-            <div class="col-lg-12">
-                <div class="card">
-                    <div class="card-header fs--1 text-white bg-info">
-                        <div class="card-title"><span>Message Status</span></div>
-                    </div>
-                    <div class="card-body">
-                        <a href="" class="btn btn-danger text-white fs--1">Cancel all pending</a>
-                        <div class="table-responsive my-4">
-                            <table class="table table-sm fs--1">
-                                <thead>
-                                    <tr class="text-uppercase">
-                                        <th class="py-2">no</th>
-                                        <th class="py-2">date</th>
-                                        <th class="py-2">Device id</th>
-                                        <th class="py-2">sender phone</th>
-                                        <th class="py-2">message</th>
-                                        <th class="py-2">status</th>
-                                        <th class="py-2">category</th>
-                                        <th class="py-2">action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>21 August 2019 00:00:09	</td>
-                                        <td>RZ8B</td>
-                                        <td>6285642184</td>
-                                        <td>Hooree ! Orderan ysf di psikologimarketing.com dengan Order Id #4141 telah selesai, Selamat atas investasi leher ke atasnya, semoga bertambah ilmunya, meningkat derajatnya, aamiin 😍 Silahkan cek email atau langsung login ke member.psikologimarketing.com di pojok kanan atas. Jangan lupa juga ysf telah *otomatis menjadi affiliate*, silahkan ambil link affiliate di member.psikologimarketing.com/affiliate Jika ada pertanyaan jangan sungkan langsung hubungi dengan klik wa.me/6285974568372 Terima kasih 🎊🎉</td>
-                                        <td>
-                                            <a href="" class="btn btn-danger btn-sm fs--2 text-white">not registered</a>
-                                        </td>
-                                        <td>text</td>
-                                        <td>
-                                            <a href="" class="btn bg-700 text-white fs--2">remove</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>21 August 2019 00:00:09	</td>
-                                        <td>RZ8B</td>
-                                        <td>6285642184</td>
-                                        <td>Hooree ! Orderan ysf di psikologimarketing.com dengan Order Id #4141 telah selesai, Selamat atas investasi leher ke atasnya, semoga bertambah ilmunya, meningkat derajatnya, aamiin 😍 Silahkan cek email atau langsung login ke member.psikologimarketing.com di pojok kanan atas. Jangan lupa juga ysf telah *otomatis menjadi affiliate*, silahkan ambil link affiliate di member.psikologimarketing.com/affiliate Jika ada pertanyaan jangan sungkan langsung hubungi dengan klik wa.me/6285974568372 Terima kasih 🎊🎉</td>
-                                        <td>
-                                            <a href="" class="btn btn-danger btn-sm fs--2 text-white">not registered</a>
-                                        </td>
-                                        <td>text</td>
-                                        <td>
-                                            <a href="" class="btn bg-700 text-white fs--2">remove</a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
+            <div class="col-lg-12 bg-white py-3 shadow-sm">
+                <p class="fs--1">Schedule Message</p>
+                <h5 class="font-weight-normal text-secondary text-800 fs-1 mt-4">set the date when the message will be sent</h5>
+                <div class="new-schedule">
+                    <button class="btn  btn-sm btn-success fs--1 mt-3" type="button" data-toggle="modal" data-target="#modelId"><span class="fas fa-plus" data-fa-transform="shrink-3 down-2"></span><span class="d-none d-sm-inline-block ml-1">New schedule</span></button>
+                </div>
+                <table class=" mt-3 table table-borderless table-lg display responsive no-wrap mb-0 fs--1 w-100">
+                    <thead>
+                        <tr class="text-uppercase">
+                            <th scope="col">no.</th>
+                            <th scope="col">date/time</th>
+                            <th scope="col">message</th>
+                            <th scope="col">action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"></th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        
+                    </tbody>
+                    </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog px-5 min-vw-100" id="content-modal" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    
                 </div>
             </div>
         </div>
+    </div>
 
-<?php
-    require_once "../view/footer.php";
-?>
+
+    <footer>
+            <div class="row no-gutters justify-content-between fs--1 mt-4 mb-3">
+              <div class="col-12 col-sm-auto text-center">
+                <p class="mb-0 text-600">Made with <i class="fa fa-heart text-danger" aria-hidden="true"></i> by Washiapp<span class="d-none d-sm-inline-block">| </span><br class="d-sm-none" /> 2019 &copy; <a href="https://washiapp.com">Washiapp.com</a></p>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </main>
+    <!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->
+
+
+
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/bootstrap.js"></script>
+    <script src="../assets/lib/stickyfilljs/stickyfill.min.js"></script>
+    <script src="../assets/lib/sticky-kit/sticky-kit.min.js"></script>
+    <script src="../assets/lib/is_js/is.min.js"></script>
+    <script src="../assets/lib/@fortawesome/all.min.js"></script>
+    <script src="../assets/lib/chart.js/Chart.min.js"></script>
+    <script src="../assets/lib/jqvmap/jquery.vmap.js"></script>
+    <script src="../assets/lib/jqvmap/maps/jquery.vmap.world.js" charset="utf-8"></script>
+    <script src="../assets/lib/jqvmap/maps/jquery.vmap.usa.js" charset="utf-8"></script>
+    <script src="../assets/js/theme.js"></script>
+    <script src="../assets/lib/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../assets/lib/datatables-bs4/dataTables.bootstrap4.min.js"></script>
+    <script src="../assets/lib/datatables.net-responsive/dataTables.responsive.js"></script>
+    <script src="../assets/lib/datatables.net-responsive-bs4/responsive.bootstrap4.js"></script>
+
+  </body>
+
+</html>
