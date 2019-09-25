@@ -333,8 +333,8 @@
                             <label for="perid">Subscription Period</label>
                             <select class="form-control" id="perid">
                                 <option value="197000" selected>1 Month</option>
-                                <option>3 Month</option>
-                                <option>6 Month</option>
+                                <option value="591000">3 Month</option>
+                                <option value="1182000">6 Month</option>
                             </select>
                         </div>
                     </form>
@@ -344,8 +344,8 @@
                             <h6 class="fs-0 font-weight-normal">Unique code</h6>
                         </div>
                         <div class="col-lg-6 text-right">
-                            <h6 class="fs-0 font-weight-normal" id="subT">Rp197.000</h6>
-                            <h6 class="fs-0 font-weight-normal">Rp.26</h6>
+                            <h6 class="fs-0 font-weight-normal" id="subT">Rp197000</h6>
+                            <h6 class="fs-0 font-weight-normal">Rp<span id="uniq">26</span></h6>
                         </div>
                     </div>
                     <div class="row mt-2 mb-8">
@@ -353,7 +353,7 @@
                             <h6 class="fs-0 font-weight-bold">Total</h6>
                         </div>
                         <div class="col-lg-6 text-right">
-                            <h6 class="fs-0 font-weight-bold">Rp197.026</h6>
+                            <h6 class="fs-0 font-weight-bold" id="total">Rp197026</h6>
                         </div>
                     </div>
                 </div>
@@ -401,6 +401,7 @@
     <script src="assets/lib/jqvmap/maps/jquery.vmap.usa.js" charset="utf-8"></script>
     <script src="assets/js/theme.js"></script>
     <script src="assets/lib/remodal/remodal.min.js"></script>
+    <script src="/assets/js/autoNumeric.js"></script>
     <script>
         $(document).ready(function() {
             $('#number').change(function () {
@@ -408,14 +409,20 @@
                 let b = parseInt($('#perid option:selected').val());
                 
                 let hasil = a*b;
-                $('#subT').text(hasil);
+                let hasila= hasil+$('#uniq').text();
+                // let hasil = c.autoNumeric('init');
+                $('#subT').text("Rp"+hasil);
+                $('#total').text("Rp"+hasila);
             })
             $('#perid').change(function () {
                 let a = parseInt($('#number option:selected').text());
                 let b = parseInt($('#perid option:selected').val());
                 
                 let hasil = a*b;
-                $('#subT').text(hasil);
+                let hasila= hasil+$('#uniq').text();
+                // let hasil = c.autoNumeric('init');
+                $('#subT').text("Rp"+hasil);
+                $('#total').text("Rp"+hasila);
             })
         })
     </script>
