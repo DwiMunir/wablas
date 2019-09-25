@@ -344,7 +344,7 @@
                             <h6 class="fs-0 font-weight-normal">Unique code</h6>
                         </div>
                         <div class="col-lg-6 text-right">
-                            <h6 class="fs-0 font-weight-normal" id="subT">Rp197000</h6>
+                            <h6 class="fs-0 font-weight-normal" id="subT">Rp197.000</h6>
                             <h6 class="fs-0 font-weight-normal">Rp<span id="uniq">26</span></h6>
                         </div>
                     </div>
@@ -353,7 +353,7 @@
                             <h6 class="fs-0 font-weight-bold">Total</h6>
                         </div>
                         <div class="col-lg-6 text-right">
-                            <h6 class="fs-0 font-weight-bold" id="total">Rp197026</h6>
+                            <h6 class="fs-0 font-weight-bold" id="total">Rp197.026</h6>
                         </div>
                     </div>
                 </div>
@@ -404,25 +404,15 @@
     <script src="/assets/js/autoNumeric.js"></script>
     <script>
         $(document).ready(function() {
-            $('#number').change(function () {
+            $('#number, #perid').change(function () {
                 let a = parseInt($('#number option:selected').text());
                 let b = parseInt($('#perid option:selected').val());
                 
                 let hasil = a*b;
-                let hasila= hasil+$('#uniq').text();
+                let hasila= hasil+parseInt($('#uniq').text());
                 // let hasil = c.autoNumeric('init');
-                $('#subT').text("Rp"+hasil);
-                $('#total').text("Rp"+hasila);
-            })
-            $('#perid').change(function () {
-                let a = parseInt($('#number option:selected').text());
-                let b = parseInt($('#perid option:selected').val());
-                
-                let hasil = a*b;
-                let hasila= hasil+$('#uniq').text();
-                // let hasil = c.autoNumeric('init');
-                $('#subT').text("Rp"+hasil);
-                $('#total').text("Rp"+hasila);
+                $('#subT').text("Rp"+hasil.toLocaleString());
+                $('#total').text("Rp"+hasila.toLocaleString());
             })
         })
     </script>
