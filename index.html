@@ -307,7 +307,7 @@
                         <div class="form-group">
                             <label for="number">How many number?</label>
                             <select class="form-control" id="number">
-                                <option>1</option>
+                                <option selected>1</option>
                                 <option>2</option>
                                 <option>3</option>
                                 <option>4</option>
@@ -330,12 +330,11 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="exampleFormControlSelect1">Subscription Period</label>
-                            <select class="form-control" id="exampleFormControlSelect1">
-                                <option>1 Month (30 days) - Rp197.000 ($17)</option>
-                                <option>3 Month - Rp591.000 ($51)</option>
-                                <option>6 Month - Rp1.182.000 ($102)</option>
-                                <option class="text-danger">1 year - Rp1.197.000 ($170) (2 month free)</option>
+                            <label for="perid">Subscription Period</label>
+                            <select class="form-control" id="perid">
+                                <option value="197000" selected>1 Month</option>
+                                <option>3 Month</option>
+                                <option>6 Month</option>
                             </select>
                         </div>
                     </form>
@@ -345,7 +344,7 @@
                             <h6 class="fs-0 font-weight-normal">Unique code</h6>
                         </div>
                         <div class="col-lg-6 text-right">
-                            <h6 class="fs-0 font-weight-normal">Rp197.000</h6>
+                            <h6 class="fs-0 font-weight-normal" id="subT">Rp197.000</h6>
                             <h6 class="fs-0 font-weight-normal">Rp.26</h6>
                         </div>
                     </div>
@@ -402,6 +401,24 @@
     <script src="assets/lib/jqvmap/maps/jquery.vmap.usa.js" charset="utf-8"></script>
     <script src="assets/js/theme.js"></script>
     <script src="assets/lib/remodal/remodal.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#number').change(function () {
+                let a = parseInt($('#number option:selected').text());
+                let b = parseInt($('#perid option:selected').val());
+                
+                let hasil = a*b;
+                $('#subT').text(hasil);
+            })
+            $('#perid').change(function () {
+                let a = parseInt($('#number option:selected').text());
+                let b = parseInt($('#perid option:selected').val());
+                
+                let hasil = a*b;
+                $('#subT').text(hasil);
+            })
+        })
+    </script>
 
 
   </body>
