@@ -311,17 +311,17 @@
                                 <option>2</option>
                                 <option>3</option>
                                 <option>4</option>
-                                <option>5 (Discont ~ 24%)</option>
+                                <option>5</option>
                                 <option>6</option>
                                 <option>7</option>
                                 <option>8</option>
                                 <option>9</option>
-                                <option>10 (Discont ~ 37%)</option>
+                                <option>10</option>
                                 <option>11</option>
                                 <option>12</option>
                                 <option>13</option>
                                 <option>14</option>
-                                <option>15 (Discont ~ 50%)</option>
+                                <option>15</option>
                                 <option>16</option>
                                 <option>17</option>
                                 <option>18</option>
@@ -337,15 +337,22 @@
                                 <option value="1182000">6 Month</option>
                             </select>
                         </div>
+                        <div class="form-group">
+                                <label for="pay">Payment Method</label>
+                                <select class="form-control" id="pay">
+                                    <option value="1" selected>Manual Bank Transfer (IDR)</option>
+                                    <option value="2">Paypal or Credit Card (USD)</option>
+                                </select>
+                            </div>
                     </form>
                     <div class="row border-bottom mt-5">
                         <div class="col-lg-6">
                             <h6 class="fs-0 font-weight-normal">Subtotal</h6>
-                            <h6 class="fs-0 font-weight-normal">Unique code</h6>
+                            <h6 class="fs-0 font-weight-normal unik">Unique code</h6>
                         </div>
                         <div class="col-lg-6 text-right">
                             <h6 class="fs-0 font-weight-normal" id="subT">Rp197.000</h6>
-                            <h6 class="fs-0 font-weight-normal">Rp<span id="uniq">26</span></h6>
+                            <h6 class="fs-0 font-weight-normal unik">Rp<span id="uniq">26</span></h6>
                         </div>
                     </div>
                     <div class="row mt-2 mb-8">
@@ -404,15 +411,42 @@
     <script src="/assets/js/autoNumeric.js"></script>
     <script>
         $(document).ready(function() {
-            $('#number, #perid').change(function () {
+            $('#number, #perid,#pay').change(function () {
                 let a = parseInt($('#number option:selected').text());
                 let b = parseInt($('#perid option:selected').val());
-                
                 let hasil = a*b;
-                let hasila= hasil+parseInt($('#uniq').text());
-                // let hasil = c.autoNumeric('init');
-                $('#subT').text("Rp"+hasil.toLocaleString());
-                $('#total').text("Rp"+hasila.toLocaleString());
+                    let hasila= hasil+parseInt($('#uniq').text());
+                    // let hasil = c.autoNumeric('init');
+                    $('#subT').text("Rp"+hasil.toLocaleString());
+                    $('#total').text("Rp"+hasila.toLocaleString()); 
+                
+                if($('#pay option:selected').val()==2){
+                    $('.unik').addClass('d-none');
+                    let b = parseInt($('#perid option:selected').val());
+                    if(b==197000){
+                        let hasil = a*17;
+                        let hasila= hasil+parseInt($('#uniq').text());
+                        // let hasil = c.autoNumeric('init');
+                        $('#subT').text("USD "+hasil.toLocaleString());
+                        $('#total').text("USD "+hasil);
+                    }
+                    else if(b==591000){
+                        let hasil = a*17*3;
+                        let hasila= hasil+parseInt($('#uniq').text());
+                        // let hasil = c.autoNumeric('init');
+                        $('#subT').text("USD "+hasil.toLocaleString());
+                        $('#total').text("USD "+hasil);
+                    }
+                    else if(b==1182000){
+                        let hasil = a*17*6;
+                        let hasila= hasil+parseInt($('#uniq').text());
+                        // let hasil = c.autoNumeric('init');
+                        $('#subT').text("USD "+hasil.toLocaleString());
+                        $('#total').text("USD "+hasil);
+                    }
+                }else if($('#pay option:selected').val()==1){
+                    $('.unik').removeClass('d-none');
+                }              
             })
         })
     </script>
